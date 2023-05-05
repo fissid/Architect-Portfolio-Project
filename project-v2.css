@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    /* height: 100vh; */
+}
+
+header {
+    margin: 0 150px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.hup, .hdown, .hright {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #777;
+}
+
+.logo {
+    height: 100px;
+    width: fit-content;
+}
+
+.logo img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0%);
+}
+
+.hcontact {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 35px;
+}
+
+.email, .phone {
+    font-size: 0.85em;
+}
+
+.email p, .phone p, .hleft a:any-link  {
+    color: #777;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.hcontact a:any-link{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.hcontact a:any-link:hover{
+    text-decoration: underline;
+}
+
+.hdown {
+    border: none;
+    padding: 0.5em 0;
+}
+
+.hleft a:any-link:hover {
+    color: black;
+}
+
+.hleft a {
+    padding: 0 15px;
+}
+
+.hright {
+    flex-wrap: wrap;
+    gap: 5px;
+    border: none;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 0 2px;
+}
+
+.social img {
+    display: block;
+    padding: 3px;
+    height: 25px;
+    width: 25px;
+}
+
+.social:hover {
+    background-color: #ddd;
+}
+
+main {
+    margin: 30px 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+main h4 {
+    padding: 0 2em;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+
+    /* gap: 3px; */
+    /* justify-content: space-between; */
+}
+.menu li {
+    text-align: center;
+    width: 100%;
+    background-color: #bbb;
+    padding: 0.5em 0;
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid black;
+    cursor:pointer;
+}
+
+.menu li:last-child {
+    border-right: 0;
+}
+
+.menu .select {
+    background-color: #eee;
+    border-bottom: 0;
+}
+
+.menu a:any-link {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.info img {
+    width: 30px;
+    height: 30px;
+}
+
+.info li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1em 0;
+}
+
+.info {
+    width: 40%;
+}
+
+.infos {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.desc {
+    text-align: justify;
+    width: 100%;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+
+.pics {
+    background-color: #eee;
+    padding: 0.2em;
+    padding-top: 0;
+}
+
+.images, .small {
+    padding-top: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.images img {
+    padding: 0.1em 0;
+    width: 400px;
+    height: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#smallimg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#smallimg:hover {opacity: 0.7;}
+
+
+.small {
+    justify-content: center;
+    gap: 2px;
+}
+
+.small img {
+    width: 200px;
+    height: 150px;
+}
+
+.window {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+  /* Modal Content (Image) */
+#bigimg {
+    margin: auto;
+    display: block;
+    width: 900px;
+    height: 630px;
+    /* max-width: 900px; */
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+#bigimg {
+    animation-name: zoom;
+    animation-duration: 0.7s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 4em;
+    font-weight: 10;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+footer {
+    margin: 0 150px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footup, .footdown, .footcontact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footdown {
+    border-top: 1px solid #555;
+    padding: 20px 0;
+}
+
+.footlogo img {
+    width: 170px;
+    height: auto;
+}
+
+.footdown {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.footdown a:any-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.1em;
+}
+
+.footdown a:any-link:hover {
+    text-decoration: underline;
+}
+
+.upbot button{
+    z-index: 2;
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.upbot button:hover {
+    /* background-color: #bbb; */
+    /* border: 1px solid #bbb; */
+    box-shadow: 0px 2px 15px -2px #555;
+
+}
+
+.upbot a:any-link {
+    height: 60px;
+    width: 50px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .bigimg {
+      width: 100%;
+    }
+  }
