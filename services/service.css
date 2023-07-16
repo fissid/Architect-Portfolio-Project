@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: none;
+
+}
+
+header .nav-item {
+    white-space:nowrap;
+}
+
+header .navbar-brand {
+    width: 50%
+}
+
+header .fa-brands {
+    font-size: 1.3em;
+}
+
+.overlay {
+    background-color: rgb(51, 51, 51,0.2);
+}
+
+.carousel-caption a:any-link {
+    text-shadow: 2px 2px 5px black;
+}
+
+
+
+/* XS */
+@media (min-width: 450px) {
+    .logo{
+        display: block;
+    }
+}
+
+/* SM */
+@media (min-width: 575.98px) { 
+
+ }
+
+/* MD */
+@media (min-width: 767.98px) { 
+
+
+}
+
+
+/* LG */
+@media (min-width: 991.98px) { 
+
+
+ }
+
+ /* XL */
+@media (min-width: 1199.98px) { 
+
+
+ }
+
+ /* TV */
+@media (min-width: 1399.98px) { 
+
+}
