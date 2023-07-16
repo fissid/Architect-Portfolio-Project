@@ -1,0 +1,102 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: none;
+
+}
+
+header .nav-item {
+    white-space:nowrap;
+}
+
+header .navbar-brand {
+    width: 50%
+}
+
+header .fa-brands {
+    font-size: 1.3em;
+}
+
+.overlay {
+    background-color: rgb(51, 51, 51,0.2);
+}
+
+#nav-tab button {
+    width: 33%;
+}
+
+.accordion-body p {
+    font-size: 1.2em;
+}
+
+.onpage {
+    max-height: 170px;
+    max-width: 170px;
+}
+
+#nav-tab button {
+    font-size: 1em;
+}
+
+
+
+
+
+/* XS */
+@media (min-width: 450px) {
+    .logo{
+        display: block;
+    }
+    .onpage {
+        max-height: 170px;
+        max-width: 190px;
+    }
+}
+
+/* SM */
+@media (min-width: 575.98px) { 
+    .onpage {
+        max-height: 170px;
+        max-width: 200px;
+    }
+    #nav-tab button {
+        font-size: 1.2em;
+    }
+ }
+
+/* MD */
+@media (min-width: 767.98px) { 
+    .onpage {
+        max-height: 170px;
+        max-width: 250px;
+    }
+
+}
+
+
+/* LG */
+@media (min-width: 991.98px) { 
+    .accordion-body p {
+        font-size: 1.5em;
+    }
+    .onpage {
+        max-height: 250px;
+        max-width: 350px;
+    }
+    #nav-tab button {
+        font-size: 1.5em;
+    }
+
+ }
+
+ /* XL */
+@media (min-width: 1199.98px) { 
+
+ }
+
+ /* TV */
+@media (min-width: 1399.98px) { 
+
+}
