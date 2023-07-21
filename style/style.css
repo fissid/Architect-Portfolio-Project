@@ -1,0 +1,436 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: none;
+
+}
+
+header .nav-item {
+    white-space:nowrap;
+}
+
+header .navbar-brand {
+    width: 50%
+}
+
+header .fa-brands {
+    font-size: 1.3em;
+}
+
+.intro {
+    height: 80vh;
+    .image-back {
+        position: relative;
+        background: url("./img/main/anjelina.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+    .overlay {
+        background-color: rgb(51, 51, 51,0.4);
+    }
+}
+.overlay {
+    background-color: rgb(51, 51, 51,0.2);
+}
+
+.intro h1 {
+    font-size: 4em;
+}
+
+.intro p {
+    font-size: 1.2em;
+    justify-self: flex-end;
+}
+
+.intro p, .intro h1 {
+    opacity: 0.8;
+    text-shadow: 1px 1px 10px #333;
+}
+
+#about h1 {
+    font-size: 1.7em;
+}
+#about h3 {
+    font-size: 1.5em;
+}
+#about h4 {
+    font-size: 1.2em;
+}
+#about p {
+    font-size: 1em;
+    font-weight: 700;
+}
+#about ul {
+    font-size: 1em;
+    font-weight: 600;
+    columns: 2;
+}
+
+
+#about .btn {
+    font-size: 1em;
+    padding: 0.3em;
+    color: #000;
+    font-weight: 600;
+
+}
+#about .btn:hover {
+    opacity: 0.5;
+    background-color: #000;
+    color: #fff;
+}
+
+.about-back{
+    background: url("./img/main/about2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    background-size: cover;
+}
+
+.arrow-btn a:any-link {
+    color: rgb(0, 0, 0,0.5);
+    background-color: rgb(51, 51, 51,0.2);
+    border-radius: 50%;
+    font-size: 1.5em;
+    padding: 0.3em 0.7em;
+    z-index: 1000;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+.arrow-btn:hover a:any-link {
+    background-color: rgb(51, 51, 51,0.8);
+    color: rgb(255, 255, 255,0.8);
+}
+
+.edu {
+    border-top: 1px solid #333;
+    padding-top: 1em;
+}
+
+.edu h1 {
+    font-size: 2.5em;
+}
+
+.edu h3 {
+    font-size: 1.3em;
+}
+
+.edu ul {
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.edu:first-child {
+    padding-top: none;
+    border-top: none;
+    padding-bottom: 1em;
+}
+
+.boximg {
+    filter: grayscale(0.5);
+}
+.boxbtn{
+    display: none;
+}
+
+
+.inbox:hover .boxbtn {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.box:hover .boximg {
+    filter: grayscale(0);
+    transition: all 0.5s;
+}
+
+.inbox:hover .boxtitle{
+    text-shadow: 2px 2px 5px #333;
+    padding-bottom: 1em;
+    transition: all 1s;
+}
+
+
+.boxbtn {
+    cursor: pointer;
+    background-color: transparent;
+    align-self: center;
+    border: 1px solid white;
+}
+
+.boxbtn, .boxtitle {
+    color: white;
+}
+
+.boxbtn {
+    border: 1px solid white;
+    background-color: rgb(170, 170, 170,0.5);
+}
+
+.pcard {
+    box-shadow: 1px 1px 7px -3px black;
+    background-image: url("./img/main/box1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    background-position: center;
+}
+
+.pcard-overlay {
+    background-color: rgb(85, 85, 85,0.75);
+}
+
+.pcard h5 {
+    color: #fff;
+    font-size: 1em;
+}
+.pcard p {
+    color: #fff;
+    font-size: 0.9em;
+}
+.pcard h2 {
+    color: #fff;
+    font-size: 1.9em;
+}
+.pcard ul {
+    color: #fff;
+    font-size: 0.8em;
+}
+.pcard a:any-link {
+    color: #fff;
+    font-size: 0.8em;
+    background-color: rgb(51, 51, 51,0.55);
+}
+.pcard a:any-link:hover {
+    background-color: rgb(51, 51, 51,0.8);
+}
+#insta h1 {
+    font-weight: 800;
+    font-size: 2.3em;
+}
+#insta a:any-link {
+    font-weight: 600;
+    font-size: 1.7em;
+}
+#insta .carousel-inner {
+    box-shadow: 1px 1px 15px -5px black;
+    border-radius: 100px;
+}
+.cbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@keyframes hire-butt {
+    0% {
+        border: 1px solid transparent;
+        box-shadow: 1px 1px 50px 0px #fff;
+    }
+    50% {
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 10px 0px #fff;
+    }
+    100% {
+        border: 1px solid transparent;
+        box-shadow: 1px 1px 50px 0px #fff;
+    }
+}
+
+.hire-me{
+    animation: 3s ease-in-out 0s 500 normal forwards hire-butt;
+}
+
+
+/* XS */
+@media (min-width: 450px) {
+    .logo{
+        display: block;
+    }
+}
+
+/* SM */
+@media (min-width: 575.98px) { 
+    .intro h1 {
+        font-size: 6em;
+    }
+    .intro p {
+        font-size: 1.5em;
+    }
+    .edu h1 {
+        font-size: 3em;
+    }
+    #insta h1 {
+        font-size: 3em;
+    }
+    #insta a:any-link {
+        font-size: 2em;
+    }
+    
+ }
+
+/* MD */
+@media (min-width: 767.98px) { 
+    .intro .image-back {
+        background-size: contain;
+        background-position: right;
+    }
+    .about-back{
+        background: none;
+    }
+    #about p, #about ul {
+        font-weight: 500;
+    }
+    .edu h3 {
+        font-size: 2em;
+    }
+    .edu {
+        border-top: none;
+        border-left: 1px solid #333;
+    }
+    .edu:first-child {
+        border-left: none;
+    }
+    .pcard h5 {
+        font-size: 1.3em;
+    }
+    .pcard p {
+        font-size: 0.95em;
+    }
+    .pcard h2 {
+        font-size: 2.8em;
+    }
+    .pcard ul {
+        font-size: 0.9em;
+    }
+    .pcard a:any-link {
+        font-size: 1em;
+    }
+    .boxtitle {
+        font-size: 1.8em;
+    }
+    .boxbtn {
+        font-size: 0.8em;
+    }
+
+}
+
+
+/* LG */
+@media (min-width: 991.98px) { 
+    .intro-inside {
+        padding: 0 1.5em;
+    }
+    .intro p {
+        padding-bottom: 2.8em;
+        font-size: 1.5em;
+    }
+    #about h1{
+        font-size: 2.5em;
+    }
+    #about h3 {
+        font-size: 2em;
+    }
+    #about h4 {
+        font-size: 1.5em;
+    }
+    #about .btn {
+        font-size: 1.2em;
+        padding: 0.5em;
+        font-weight: 500;
+    }
+    .edu ul {
+        font-size: 1em;
+        padding-left: 30px;
+    }
+
+    .pcard p {
+        color: #555;
+        font-size: 1em;
+    }
+    .pcard h2 {
+        color: #000;
+        font-size: 3em;
+    }
+    .pcard ul {
+        color: #000;
+        font-size: 1em;
+    }
+    .pcard h5 {
+        color: #555;
+    }
+    .pcard a:any-link {
+        color: #555;
+        font-size: 1em;
+        background-color: #ddd;
+    }
+    .pcard a:any-link:hover {
+        background-color: #ccc;
+    }
+    .pcard {
+        background-image: none;
+    }
+    
+    .pcard-overlay {
+        background-color: #fff;
+    }
+    #insta h1 {
+        font-size: 3.5em;
+    }
+    #insta a:any-link {
+        font-size: 2.5em;
+    }
+    .boxtitle {
+        font-size: 2.5em;
+    }
+    .boxbtn {
+        font-size: 1.2em;
+    }
+
+ }
+
+ /* XL */
+@media (min-width: 1199.98px) { 
+    .intro h1 {
+        font-size: 8em;
+    }
+    .intro-inside {
+        padding-left: 8em;
+    }
+    .pcard {
+        max-width: 80vw;
+        max-height: 50vh;
+    }
+    .pcard p {
+        font-size: 1.2em;
+    }
+    .pcard h2 {
+        font-size: 2.5em;
+    }
+    .pcard ul {
+        font-size: 1em;
+    }
+    .pcard a:any-link {
+        font-size: 1em;
+    }
+    #insta h1 {
+        font-size: 4em;
+    }
+    #insta a:any-link {
+        font-size: 3em;
+    }
+
+ }
+
+ /* TV */
+@media (min-width: 1399.98px) { 
+
+}
